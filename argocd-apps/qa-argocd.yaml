@@ -5,10 +5,10 @@ source:
   targetRevision: HEAD
   helm:
     valueFiles:
-      - values.yaml
+      - qa-values.yaml
 destination:
   server: https://kubernetes.default.svc
-  namespace: dev
+  namespace: qa
 syncPolicy:
   automated:
     prune: true
